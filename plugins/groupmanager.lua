@@ -213,10 +213,7 @@ local function lock_group_photo(msg, data)
 	end
 	return 'Please send me the group photo now'
 end
-    if matches[1] == 'creategroup' and matches[2] then
-        group_name = matches[2]
-        return create_group(msg)
-    end
+
 local function unlock_group_photo(msg, data)
   if not is_sudo(msg) then
     return "For moderators only!"
@@ -305,6 +302,11 @@ local function pre_process(msg)
 end
 
 function run(msg, matches)
+	    if matches[1] == 'creategroup' and matches[2] then
+        group_name = matches[2]
+        return create_group(msg)
+    end
+
 
   if not is_chat_msg(msg) then
 	    return "This is not a group chat."
