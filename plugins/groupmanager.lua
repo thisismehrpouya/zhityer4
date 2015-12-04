@@ -1,5 +1,14 @@
 -- data saved to data/moderation.json
 do
+local function create_group(msg)
+    -- superuser and admins only (because sudo are always has privilege)
+    if not is_admin(msg) then
+        return "You're not admin!"
+    end
+    local group_creator = msg.from.print_name
+    create_group_chat (group_creator, group_name, ok_cb, false)
+	return 'Group '..string.gsub(group_name, '_', ' ')..' has been created.'
+end
 
 local function gpadd(msg)
   -- because sudo are always has privilege
@@ -204,7 +213,10 @@ local function lock_group_photo(msg, data)
 	end
 	return 'Please send me the group photo now'
 end
-
+    if matches[1] == 'creategroup' and matches[2] then
+        group_name = matches[2]
+        return create_group(msg)
+    end
 local function unlock_group_photo(msg, data)
   if not is_sudo(msg) then
     return "For moderators only!"
@@ -480,6 +492,7 @@ end
 return {
   description = "Plugin to manage group chat.",
   usage = {
+   "!creategroup <group_name> : Create a new group (admin only)",
     "!about : Read group description",
     "!gpadd : Add group to moderation list.",
     "!gprem : Remove group from moderation list.",
@@ -496,6 +509,7 @@ return {
     "!setrules <rules> : Set group rules"
   },
   patterns = {
+ "^!(creategroup) (.*)$",
     "^!(about)$",
     "%[(audio)%]",
     "%[(document)%]",
