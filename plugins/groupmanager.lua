@@ -10,50 +10,6 @@ local function create_group(msg)
 	return 'Group '..string.gsub(group_name, '_', ' ')..' has been created.'
 end
 
-local function gpadd(msg)
-  -- because sudo are always has privilege
-  if not is_sudo(msg) then
-    return nil
-  end
-  local data = load_data(_config.moderation.data)
-  if data[tostring(msg.to.id)] then
-    return 'Group is already added.'
-  end
-    -- create data array in moderation.json
-  data[tostring(msg.to.id)] = {
-    moderators ={},
-    settings = {
-      set_name = string.gsub(msg.to.print_name, '_', ' '),
-      lock_bots = 'no',
-      lock_name = 'no',
-      lock_photo = 'no',
-      lock_member = 'no',
-      anti_flood = 'no',
-      welcome = 'no'
-      }
-    }
-  save_data(_config.moderation.data, data)
-
-  return 'Group has been added.'
-end
-
-local function gprem(msg)
-    -- because sudo are always has privilege
-    if not is_sudo(msg) then
-        return nil
-    end
-    local data = load_data(_config.moderation.data)
-    local receiver = get_receiver(msg)
-  if not data[tostring(msg.to.id)] then
-    return 'Group is not added.'
-  end
-
-  data[tostring(msg.to.id)] = nil
-  save_data(_config.moderation.data, data)
-
-  return 'Group has been removed'
-end
-
 local function export_chat_link_callback(extra, success, result)
   local receiver = extra.receiver
   local data = extra.data
@@ -315,15 +271,6 @@ function run(msg, matches)
   local data = load_data(_config.moderation.data)
   local receiver = get_receiver(msg)
 
-  -- add a group to be moderated
-  if matches[1] == 'gpadd' then
-    return gpadd(msg)
-  end
-
-  -- remove group from moderation
-  if matches[1] == 'gprem' then
-    return gprem(msg)
-  end
 
   if msg.media and is_chat_msg(msg) and is_sudo(msg) then
     if msg.media.type == 'photo' and data[tostring(msg.to.id)] then
@@ -496,8 +443,6 @@ return {
   usage = {
    "!creategroup <group_name> : Create a new group (admin only)",
     "!about : Read group description",
-    "!gpadd : Add group to moderation list.",
-    "!gprem : Remove group from moderation list.",
     "!group <lock|unlock> bot : {Dis}allow APIs bots",
     "!group <lock|unlock> member : Lock/unlock group member",
     "!group <lock|unlock> name : Lock/unlock group name",
@@ -515,8 +460,6 @@ return {
     "^!(about)$",
     "%[(audio)%]",
     "%[(document)%]",
-    "^!(gpadd)$",
-    "^!(gprem)$",
     "^!(group) (lock) (.*)$",
     "^!(group) (settings)$",
     "^!(group) (unlock) (.*)$",
