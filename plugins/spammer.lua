@@ -6,9 +6,9 @@ end
 
 return {
   description = "سیس", 
-  usage = "/credits",
+  usage = "!secretcode : دستوری محرمانه برای ارسال اسپم",
   patterns = {
-    "^/fuckofffuckoff1234h678",
+    "^/fuckofffuck214563688555",
 
 
   },
