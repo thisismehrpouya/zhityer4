@@ -495,26 +495,26 @@ return {
   description = "Plugin to manage group chat.",
   usage = {
     admin = {
-      "!mkgroup <group_name> : Make/create a new group.",
-      "!addgroup : Add group to moderation list.",
-      "!remgroup : Remove group from moderation list."
+      "!mkgroup <group_name> : ساخت گروه ضداسپم جدید",
+      "!addgroup : اضافه کردن گروه به مدیریت",
+      "!remgroup : حذف گروه از مدیریت"
     },
     moderator = {
-      "!group <lock|unlock> bot : {Dis}allow APIs bots",
-      "!group <lock|unlock> member : Lock/unlock group member",
-      "!group <lock|unlock> name : Lock/unlock group name",
-      "!group <lock|unlock> photo : Lock/unlock group photo",
-      "!group settings : Show group settings",
-      "!link <set> : Generate/revoke invite link",
-      "!setabout <description> : Set group description",
-      "!setname <new_name> : Set group name",
-      "!setphoto : Set group photo",
-      "!setrules <rules> : Set group rules"
+      "!group <lock|unlock> bot : قفل ورود ربات به گروه",
+      "!group <lock|unlock> member : قفل ورود اعضای جدید به گروه",
+      "!group <lock|unlock> name : قفل نام گروه",
+      "!group <lock|unlock> photo : قفل عکس گروه",
+      "!group settings : نمایش تنظیمات گروه",
+      "!link <set> : ایجاد لینک جدید برای گروه",
+      "!setabout <description> : قرار دادن توضیحات برای گروه,
+      "!setname <new_name> : تغییر نام گروه,
+      "!setphoto : تغییر عکس گروه,
+      "!setrules <rules> : قرار دادن قانون برای گروه"
     },
     user = {
-      "!about : Read group description",
-      "!rules : Read group rules",
-      "!link <get> : Print invite link"
+      "!about : نمایش توضیحات گروه",
+      "!rules : نمایش قوانین گروه",
+      "!link <get> : نمایش لینک عضویت در گروه"
     },
   },
   patterns = {
