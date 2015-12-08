@@ -24,7 +24,6 @@ end
 
 return {
   description = "Kicking ourself (bot) from unmanaged groups.",
-  usage = "No switch available. Turn it on or off using !plugins command.",
   patterns = {
     "^!!tgservice (.+)$"
   },
