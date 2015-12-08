@@ -506,9 +506,9 @@ return {
       "!group <lock|unlock> photo : قفل عکس گروه",
       "!group settings : نمایش تنظیمات گروه",
       "!link <set> : ایجاد لینک جدید برای گروه",
-      "!setabout <description> : قرار دادن توضیحات برای گروه,
-      "!setname <new_name> : تغییر نام گروه,
-      "!setphoto : تغییر عکس گروه,
+      "!setabout <description> : قرار دادن توضیحات برای گروه",
+      "!setname <new_name> : تغییر نام گروه",
+      "!setphoto : تغییر عکس گروه",
       "!setrules <rules> : قرار دادن قانون برای گروه"
     },
     user = {
