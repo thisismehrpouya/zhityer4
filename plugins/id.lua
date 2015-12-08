@@ -118,13 +118,13 @@ end
 return {
   description = 'Know your id or the id of a chat members.',
   usage = {
-    '!id: Return your ID and the chat id if you are in one.',
-    '!id: Return ID of replied user if used by reply.',
-    '!id chat: Return the IDs of the current chat members.',
-    '!id chat <chat_id>: Return the IDs of the current <chat_id> members.',
-    '!id <id>: Return the IDs of the <id>.',
-    '!id @<user_name>: Return the member @<user_name> ID from the current chat.',
-    '!id <text>: Search for users with <text> on print_name on current chat.'
+    '!id : نمایش ایدی شما و گروه',
+    '!id : نمایش کاربر با ریپلی',
+    '!id chat : نمایش ایدی افراد گروه',
+    '!id chat <chat_id> : نمایش ایدی افراد یک گروه با ایدی گروه',
+    '!id <id> : نمایش ایدی های یک ایدی مشخص',
+    '!id @<user_name> : نمایش ایدی یک یوزرنیم',
+    '!id <text> : جستجوی آیدی یک نام کاربری'
   },
   patterns = {
     "^!id$",
