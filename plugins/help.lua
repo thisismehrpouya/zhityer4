@@ -165,9 +165,9 @@ return {
     "!help [number]: شرح دستورات یک پلاگین با شماره آن"
   },
   patterns = {
-    "^!help$",
-    "^!help all",
-    "^!help (.+)"
+    "^[!/]help$",
+    "^[!/]help all",
+    "^[!/]help (.+)"
   },
   run = run
 }
