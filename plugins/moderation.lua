@@ -333,40 +333,39 @@ return {
   description = "Moderation plugin",
   usage = {
     moderator = {
-      "!promote : If typed when replying, promote replied user as moderator",
-      "!promote <user_id> : Promote user_id as moderator",
-      "!promote @<username> : Promote username as moderator",
-      "!demote : If typed when replying, demote replied user from moderator",
-      "!demote <user_id> : Demote user_id from moderator",
-      "!demote @<username> : Demote username from moderator",
-      "!modlist : List of moderators"
+      "!promote : ادمین کردن کاربر با ریپلی",
+      "!promote <user_id> : ادمین کردن با ایدی",
+      "!promote @<username> : ادمین کردن با یوزرنیم",
+      "!demote : حذف ادمین با ریپلی",
+      "!demote <user_id> : حذف ادمین با ایدی",
+      "!demote @<username> : حذف ادمین با یوزرنیم",
+      "!modlist : لیست مدیران گروه"
       },
     sudo = {
-      "Following commands must be done from a group:\n\n",
-      "!adminprom : If typed when replying, promote replied user as admin.",
-      "!adminprom <user_id> : Promote user_id as admin.",
-      "!adminprom @<username> : Promote username as admin.",
-      "!admindem : If typed when replying, demote replied user from admin.",
-      "!admindem <user_id> : Demote user_id from admin.",
-      "!admindem @<username> : Demote username from admin."
+      "!adminprom : سوپرادمین کردن با ریپلی",
+      "!adminprom <user_id> : سوپرادمین کردن با ایدی",
+      "!adminprom @<username> : سوپرادمین کردن با یوزرنیم",
+      "!admindem : حذف سوپرادمین با ریپلی",
+      "!admindem <user_id> : حذف سوپرادمین با ایدی",
+      "!admindem @<username> : حذف سوپرادمین با یوزرنیم"
       },
     },
   patterns = {
-    "^!(admindem) (%d+)$",
-    "^!(admindem) (.*)$",
-    "^!(admindem)$",
-    "^!(adminlist)$",
-    "^!(adminprom) (%d+)$",
-    "^!(adminprom) (.*)$",
-    "^!(adminprom)$",
-    "^!(demote) (.*)$",
-    "^!(demote)$",
-    "^!(modlist)$",
-    "^!(promote) (.*)$",
-    "^!(promote)$",
-    "^!(promote) (%d+)$",
-    "^!!tgservice (chat_add_user)$",
-    "^!!tgservice (chat_created)$"
+    "^[!/](admindem) (%d+)$",
+    "^[!/](admindem) (.*)$",
+    "^[!/](admindem)$",
+    "^[!/](adminlist)$",
+    "^[!/](adminprom) (%d+)$",
+    "^[!/](adminprom) (.*)$",
+    "^[!/](adminprom)$",
+    "^[!/](demote) (.*)$",
+    "^[!/](demote)$",
+    "^[!/](modlist)$",
+    "^[!/](promote) (.*)$",
+    "^[!/](promote)$",
+    "^[!/](promote) (%d+)$",
+    "^[!/]!tgservice (chat_add_user)$",
+    "^[!/]!tgservice (chat_created)$"
   },
   run = run
 }
