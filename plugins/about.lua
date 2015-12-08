@@ -2,9 +2,8 @@ do
 
 function run(msg, matches)
   return 'PoliceTG '
-  '
   برای سفارش گروه ضداسپم به ایدی زیر مراجعه کنید.
-  @policetg_admin'
+  @policetg_admin
 end
 
 return {
