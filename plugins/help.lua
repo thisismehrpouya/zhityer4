@@ -87,9 +87,9 @@ local function plugin_help(name,number,requester)
         text = text..usage..'\n'
       end
     end
-    text = text..'➖➖➖➖➖➖➖➖➖➖➖\n'
+    text = text..'〰〰〰〰〰〰〰〰〰\n'
   elseif has_usage_data(plugin) then -- Is not empty
-    text = text..plugin.usage..'\n➖➖➖➖➖➖➖➖➖➖➖\n'
+    text = text..plugin.usage..'\n〰〰〰〰〰〰〰〰〰n'
   end
   return text
 end
@@ -159,10 +159,10 @@ end
 return {
   description = "Help plugin. Get info from other plugins.",
   usage = {
-    "!help: Show list of plugins.",
-    "!help all: Show all commands for every plugin.",
-    "!help [plugin name]: Commands for that plugin.",
-    "!help [number]: Commands for that plugin. Type !help to get the plugin number."
+    "!help: نمایش پلاگین های ربات",
+    "!help all: نمایش تمام دستورات ربات",
+    "!help [plugin name]: شرح دستورات یک پلاگین مشخص",
+    "!help [number]: شرح دستورات یک پلاگین با شماره آن"
   },
   patterns = {
     "^!help$",
