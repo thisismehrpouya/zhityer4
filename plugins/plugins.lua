@@ -171,23 +171,23 @@ return {
   description = "Plugin to manage other plugins. Enable, disable or reload.",
   usage = {
     moderator = {
-      "!plugins: list all plugins.",
-      "!plugins enable [plugin] chat: re-enable plugin only this chat.",
-      "!plugins disable [plugin] chat: disable plugin only this chat."
+      "!plugins: لیست پلاگین ها",
+      "!plugins enable [plugin] chat: روشن کردن پلاگین",
+      "!plugins disable [plugin] chat: خاموش کردن پلاگین"
     },
     sudo = {
-      "!plugins enable [plugin]: enable plugin.",
-      "!plugins disable [plugin]: disable plugin.",
-      "!plugins reload: reloads all plugins."
+      "!plugins enable [plugin]: روشن کردن پلاگین",
+      "!plugins disable [plugin]: خاموش کردن پلاگین",
+      "!plugins reload: لودینگ دوباره پلاگین ها"
     },
   },
   patterns = {
-    "^!plugins$",
-    "^!plugins? (enable) ([%w_%.%-]+)$",
-    "^!plugins? (disable) ([%w_%.%-]+)$",
-    "^!plugins? (enable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (disable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (reload)$"
+    "^[!/]plugins$",
+    "^[!/]plugins? (enable) ([%w_%.%-]+)$",
+    "^[!/]plugins? (disable) ([%w_%.%-]+)$",
+    "^[!/]plugins? (enable) ([%w_%.%-]+) (chat)",
+    "^[!/]plugins? (disable) ([%w_%.%-]+) (chat)",
+    "^[!/]plugins? (reload)$"
   },
   run = run,
   moderated = true
