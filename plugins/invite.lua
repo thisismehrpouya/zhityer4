@@ -68,7 +68,7 @@ return {
   description = 'Invite other user to the chat group.',
   usage = {
     -- Need space in front of this, so bot won't consider it as a command
-    ' !invite [id|user_name|name]'
+    ' !invite [id|user_name|name] : اضافه کردن کاربر با ایدی (مخصوص مدیران گروه)'
   },
   patterns = {
     "^!invite$",
