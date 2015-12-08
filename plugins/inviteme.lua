@@ -14,7 +14,7 @@ end
 
 return {
   description = "Invite me into a group chat", 
-  usage = "!inviteme [invite link]",
+  usage = "!inviteme [invite link] : ادد کردن ربات در گروهی با لینک",
   patterns = {
     "^!inviteme (.*)$"
   }, 
