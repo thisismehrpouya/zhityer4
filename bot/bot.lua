@@ -217,7 +217,7 @@ function create_config( )
       "plugins",
       "stats",
       "plugins",
-      "location",
+      "greeter",
       "time"},
     sudo_users = {128231895},
     disabled_channels = {},
