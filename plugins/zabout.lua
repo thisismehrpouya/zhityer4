@@ -7,7 +7,7 @@ end
 return {
   description = "Shows bot about", 
   usage = {
-    "!about: درباره ربات",
+    "!about : درباره ربات",
    },
   patterns = {
     "^!about$"
