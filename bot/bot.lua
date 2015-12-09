@@ -211,7 +211,6 @@ function create_config( )
       "banhammer",
       "groupmanager",
       "help",
-      "spammer",
       "id",
       "invite",
       "moderation",
