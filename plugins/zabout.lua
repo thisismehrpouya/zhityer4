@@ -5,12 +5,12 @@ function run(msg, matches)
 end
 
 return {
-  description = "Shows bot version", 
+  description = "Shows bot about", 
   usage = {
-    "!version: درباره ربات",
+    "!about: درباره ربات",
    },
   patterns = {
-    "^!version$"
+    "^!about$"
   }, 
   run = run 
 }
