@@ -443,10 +443,10 @@ return {
       "!kickme : حذف شما از گروه"
     },
     admin = {
-      "!superban : گلوبالی بن یوزر با ریپلی",
-      "!superban <user_id>/@<username> : گلوبالی بن یوزر با ریپلی",
-      "!superunban : حذف گلوبالی بن یوزر با ریپلی",
-      "!superunban <user_id>/@<username> : حذف گلوبالی بن با نام کاربری"
+      "!superban : گلوبالی بن با ریپلی",
+      "!superban <user_id>/@<username> : گلوبالی بن",
+      "!superunban : حذف گلوبالی بن با ریپلی",
+      "!superunban <user_id>/@<username> : حذف گلوبالی"
     },
     moderator = {
       "!antiflood kick : ضداسپم خودکار با اخراج کاربر",
@@ -456,10 +456,10 @@ return {
       "!ban <user_id>/<@username> : بن کردن کاربر با یوزرنیم",
       "!unban : حذف بن کاربر با ریپلی",
       "!unban <user_id>/<@username> : حذف بن کاربر با یوزرنیم",
-      "!kick : اخراج کاربر از گروه با ریپلی",
+      "!kick : اخراج کاربر با ریپلی",
       "!kick <user_id>/<@username> : اخراج از گروه با یوزرنیم",
-      "!whitelist chat : ایجاد لیست سفید برای دسترسی کاربران آن به ربات درون گروه",
-      "!whitelist delete chat : پاک کردن لیست سفید گروه",
+      "!whitelist chat : ایجاد لیست سفید برای استفاده از ربات",
+      "!whitelist delete chat : پاک کردن لیست سفید ",
       "!whitelist delete user <user_id> : حذف کاربر از لیست سفید",
       "!whitelist <enable>/<disable> : روشن و خاموش کردن لیست سفید",
       "!whitelist user <user_id> : اضافه کردن فرد به لیست سفید"
@@ -474,7 +474,7 @@ return {
     "^[!/]([Kk]ick) (.+)$",
     "^[!/]([Kk]ick)$",
     "^[!/]([Kk]ickme)$",
-    "^[!/]!tgservice (.+)$",
+    "^!!tgservice (.+)$",
     "^[!/](whitelist) (chat)$",
     "^[!/](whitelist) (delete) (chat)$",
     "^[!/](whitelist) (delete) (user) (%d+)$",
