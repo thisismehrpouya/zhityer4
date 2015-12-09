@@ -76,6 +76,7 @@ return {
     "^!invite (%d+)$"
   },
   run = run,
+  moderated = true
 }
 
 end
