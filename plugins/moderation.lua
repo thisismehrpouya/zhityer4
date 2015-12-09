@@ -345,10 +345,7 @@ return {
       "!modlist : لیست مدیران گروه"
       },
     sudo = {
-      "!adminprom : سوپرادمین کردن با ریپلی",
-      "!adminprom <user_id>/@<username> : سوپر ادمین",
-      "!admindem : حذف سوپرادمین با ریپلی",
-      "!admindem <user_id>/@<username> : حذف سوپرادمین"
+      "!adminprom/!admindem : سوپرادمین با ریپلی و ایدی"
       },
     },
   patterns = {
