@@ -170,11 +170,6 @@ end
 return {
   description = "Plugin to manage other plugins. Enable, disable or reload.",
   usage = {
-    moderator = {
-      "!plugins: لیست پلاگین ها",
-      "!plugins enable [plugin] chat: روشن کردن پلاگین",
-      "!plugins disable [plugin] chat: خاموش کردن پلاگین"
-    },
     sudo = {
       "!plugins enable [plugin]: روشن کردن پلاگین",
       "!plugins disable [plugin]: خاموش کردن پلاگین",
@@ -190,7 +185,6 @@ return {
     "^[!/]plugins? (reload)$"
   },
   run = run,
-  moderated = true
 }
 
 end
