@@ -123,14 +123,14 @@ return {
   description = 'Sends a custom message when a user enters or leave a chat.',
   usage = {
     moderator = {
-      '!welcome group : Welcome message will shows in group.',
-      '!welcome pm : Welcome message will send to new member via PM.',
-      '!welcome disable : Disable welcome message.'
+      '!welcome group : ارسال پیام خوش امد گویی در گروه',
+      '!welcome pm : ارسال پیام خوش آمد گویی به پی وی اعضای جدید',
+      '!welcome disable : غیرفعال کردن پیام خوش آمد گویی'
     },
   },
   patterns = {
-    "^!!tgservice (.+)$",
-    "^!(welcome) (.*)$"
+    "^[!/]!tgservice (.+)$",
+    "^[!/](welcome) (.*)$"
   },
   run = run,
   moderated = true
