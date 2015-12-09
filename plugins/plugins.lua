@@ -171,8 +171,7 @@ return {
   description = "Plugin to manage other plugins. Enable, disable or reload.",
   usage = {
     sudo = {
-      "!plugins enable [plugin]: روشن کردن پلاگین",
-      "!plugins disable [plugin]: خاموش کردن پلاگین",
+      "!plugins enable/disable [plugin]: روشن و خاموش کردن پلاگین",
       "!plugins reload: لودینگ دوباره پلاگین ها"
     },
   },
