@@ -334,11 +334,9 @@ return {
   usage = {
     moderator = {
       "!promote : ادمین کردن کاربر با ریپلی",
-      "!promote <user_id> : ادمین کردن با ایدی",
-      "!promote @<username> : ادمین کردن با یوزرنیم",
+      "!promote <user_id>/@<username> : ادمین کردن کاربر",
       "!demote : حذف ادمین با ریپلی",
-      "!demote <user_id> : حذف ادمین با ایدی",
-      "!demote @<username> : حذف ادمین با یوزرنیم",
+      "!demote <user_id>/@<username> : حذف ادمین",
       "!modlist : لیست مدیران گروه"
       },
     sudo = {
@@ -362,7 +360,7 @@ return {
     "^[!/](promote) (.*)$",
     "^[!/](promote)$",
     "^[!/](promote) (%d+)$",
-    "^[!/]!tgservice (chat_add_user)$",
+    "^!!tgservice (chat_add_user)$",
     "^!!tgservice (chat_created)$"
   },
   run = run
