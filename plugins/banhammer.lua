@@ -443,10 +443,7 @@ return {
       "!kickme : حذف شما از گروه"
     },
     admin = {
-      "!superban : گلوبالی بن با ریپلی",
-      "!superban <user_id>/@<username> : گلوبالی بن",
-      "!superunban : حذف گلوبالی بن با ریپلی",
-      "!superunban <user_id>/@<username> : حذف گلوبالی"
+      "!superban/!superunban : گلوبالی بن با ریپلی و ایدی",
     },
     moderator = {
       "!antiflood kick : ضداسپم خودکار با اخراج کاربر",
@@ -454,9 +451,9 @@ return {
       "!antiflood disable : غیرفعال کردن ضداسپم خودکار",
       "!ban : بن کردن کاربر با ریپلی",
       "!ban <user_id>/<@username> : بن کردن کاربر با یوزرنیم",
-      "!unban : حذف بن کاربر با ریپلی",
+      "!unban : حذف بن با ریپلی",
       "!unban <user_id>/<@username> : حذف بن کاربر با یوزرنیم",
-      "!kick : اخراج کاربر با ریپلی",
+      "!kick : اخراج با ریپلی",
       "!kick <user_id>/<@username> : اخراج از گروه با یوزرنیم",
       "!whitelist chat : ایجاد لیست سفید برای استفاده از ربات",
       "!whitelist delete chat : پاک کردن لیست سفید ",
