@@ -207,7 +207,7 @@ function create_config( )
     enabled_plugins = {
       "zabout",
       "autoleave",
-      "location",
+      "tlocation",
       "banhammer",
       "groupmanager",
       "help",
