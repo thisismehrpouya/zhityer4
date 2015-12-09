@@ -78,28 +78,20 @@ merbot_upstart() {
 
   printf "%s\n" "
 description "Merbots upstart script."
-
 respawn
 respawn limit 15 5
-
 start on runlevel [2345]
 stop on shutdown
-
 setuid $(whoami)
 exec /bin/sh $(pwd)/merbot
 " | sudo tee /etc/init/merbot.conf > /dev/null
 
   [[ -f /etc/init/merbot.conf ]] && printf "%s\n" '
-
   Upstart script installed to /etc/init/merbot.conf.
   Now you can start merbot with:
-
     sudo start merbot
-
   Or stop merbot with:
-
     sudo stop merbot
-
 '
 }
 
@@ -112,10 +104,8 @@ merbot_systemd() {
   printf "%s\n" "
 [Unit]
 Description=Merbot systemd service for $(whoami)
-
 [Service]
 ExecStart=$(pwd)/merbot
-
 [Install]
 WantedBy=default.target
 " > $SVCDIR/merbot.service
@@ -123,23 +113,17 @@ WantedBy=default.target
   systemctl --user enable merbot.service
 
   [[ -f $SVCDIR/merbot.service ]] && printf "%s\n" "
-
   Systemd unit installed to:
   $HOME/.config/systemd/user/merbot.service
   And has been enabled.
-
   To start merbot:
     systemctl --user start merbot
-
   To stop merbot:
     systemctl --user stop merbot
-
   To shows merbot status:
     systemctl --user status merbot
-
   To disable merbot service:
     systemctl --user disable merbot.service
-
 "
 
 }
@@ -148,6 +132,7 @@ install() {
   git pull
   git submodule update --init --recursive
   patch -i "patches/lua-tg.get_message.block_user.res_user.export_chat_link.patch" -p 0 --batch --forward
+  patch -i "patches/lua-tg.media_caption.patch" -p 0 --batch --forward
   RET=$?;
 
   cd tg
