@@ -168,9 +168,9 @@ end
 return {
   description = "Plugin to update user stats.", 
   usage = {
-    "!stats: نمایش مشخصات کامل و تعداد پیام افراد گروه",
-    "!stats chat <chat_id>: نمایش وضعیت یک گروه با ایدی",
-    "!stats bot: نمایش وضعیت ربات برای ادمین اصلی"
+    "!stats : نمایش مشخصات کامل و تعداد پیام افراد گروه",
+    "!stats chat <chat_id> : نمایش وضعیت یک گروه با ایدی",
+    "!stats bot : نمایش وضعیت ربات برای ادمین اصلی"
   },
   patterns = {
     "^[!/]([Ss]tats)$",
