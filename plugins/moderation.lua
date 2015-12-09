@@ -343,11 +343,9 @@ return {
       },
     sudo = {
       "!adminprom : سوپرادمین کردن با ریپلی",
-      "!adminprom <user_id> : سوپرادمین کردن با ایدی",
-      "!adminprom @<username> : سوپرادمین کردن با یوزرنیم",
+      "!adminprom <user_id>/@<username> : سوپر ادمین",
       "!admindem : حذف سوپرادمین با ریپلی",
-      "!admindem <user_id> : حذف سوپرادمین با ایدی",
-      "!admindem @<username> : حذف سوپرادمین با یوزرنیم"
+      "!admindem <user_id>/@<username> : حذف سوپرادمین"
       },
     },
   patterns = {
