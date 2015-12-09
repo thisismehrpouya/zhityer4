@@ -53,7 +53,9 @@ end
 
 return {
   description = "Gets information about a location, maplink and overview", 
-  usage = "!loc (location): نمایش اطلاعات یک موقعیت مکانی",
+  usage = {
+    "!loc (location): نمایش اطلاعات یک موقعیت مکانی",
+   },
   patterns = {"^!loc (.*)$"}, 
   run = run 
 }
