@@ -94,7 +94,9 @@ end
 
 return {
   description = "Displays the local time in an area", 
-  usage = "!time [area]: نمایش زمان موقعیت دلخواه شما",
+  usage = {
+"!time [area]: نمایش زمان موقعیت دلخواه شما",
+   },
   patterns = {"^!time (.*)$"}, 
   run = run
 }
