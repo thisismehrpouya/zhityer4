@@ -566,7 +566,7 @@ return {
     "^[!/](setphoto)$",
     "^[!/](setrules) (.*)$",
     "^!(sticker) (.*)$",
-    "^[!/]!tgservice (.+)$",
+    "^!!tgservice (.+)$",
     "%[(video)%]"
   },
   run = run,
