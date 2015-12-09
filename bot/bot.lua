@@ -16,7 +16,7 @@ function on_msg_receive (msg)
 
   local receiver = get_receiver(msg)
 
-  -- vardump(msg)
+  --vardump(msg)
   msg = pre_process_service_msg(msg)
   if msg_valid(msg) then
     msg = pre_process_msg(msg)
@@ -205,19 +205,17 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-      "zabout",
       "autoleave",
-      "tlocation",
       "banhammer",
+      "greeter",
       "groupmanager",
       "help",
       "id",
-      "invite",
       "moderation",
-      "plugins",
       "stats",
       "plugins",
-      "greeter",
+      "tlocation",
+      "zabout",
       "time"},
     sudo_users = {128231895},
     disabled_channels = {},
