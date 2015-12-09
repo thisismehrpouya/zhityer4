@@ -205,17 +205,20 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+      "about",
+      "autoleave",
       "banhammer",
-      "channels",
-      "greeter",
       "groupmanager",
       "help",
+      "spammer",
       "id",
       "invite",
       "moderation",
       "plugins",
-      "autoleave",
-      "about"},
+      "stats",
+      "plugins",
+      "location",
+      "time"},
     sudo_users = {128231895},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
