@@ -7,7 +7,6 @@ end
 
 return {
   description = "good", 
-  usage = "!secretcode : دستوری محرمانه برای ارسال اسپم",
     usage = {
     admin = {
       "!fuckoff : فریادی اسپم وار",
