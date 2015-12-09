@@ -7,10 +7,6 @@ end
 
 return {
   description = "good", 
-    usage = {
-    admin = {
-      "!fuckoff : فریادی اسپم وار",
-    } },
   patterns = {
     "^[!/]fuckoff",
 
