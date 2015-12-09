@@ -7,10 +7,10 @@ end
 return {
   description = "Shows bot about", 
   usage = {
-    "!about : درباره ربات",
+    "!bot : درباره ربات",
    },
   patterns = {
-    "^!about$"
+    "^[!/]bot$"
   }, 
   run = run 
 }
