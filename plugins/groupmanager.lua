@@ -526,7 +526,7 @@ return {
     "^[!/](group) (settings)$",
     "^[!/](group) (unlock) (.*)$",
     "^[!/](link) (.*)$",
-    "^[!/]!(mkgroup) (.*)$",
+    "^[!/](mkgroup) (.*)$",
     "%[(photo)%]",
     "^[!/](remgroup)$",
     "^[!/](rules)$",
