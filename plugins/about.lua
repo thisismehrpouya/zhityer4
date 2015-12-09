@@ -6,7 +6,9 @@ end
 
 return {
   description = "Shows bot version", 
-  usage = "!version: درباره ربات",
+  usage = {
+    "!version: درباره ربات",
+   },
   patterns = {
     "^!version$"
   }, 
