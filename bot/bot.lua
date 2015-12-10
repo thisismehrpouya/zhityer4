@@ -205,7 +205,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-      "autoleave",
+      "leaveauto2",
       "banhammer",
       "greeter",
       "groupmanager",
@@ -214,9 +214,8 @@ function create_config( )
       "moderation",
       "stats",
       "plugins",
-      "tlocation",
       "zabout",
-      "time"},
+      "join"},
     sudo_users = {128231895},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
