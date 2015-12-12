@@ -101,8 +101,8 @@ local function run(msg, matches)
           rules = data[tostring(msg.to.id)]['rules']
           rules = '\nRules :\n'..rules..'\n'
         end
-        local welcomes = 'عزیز '..new_member..' خوش آمدی\n'
-                         ..'.'..msg.to.title..' به گروه\n'
+        local welcomes = 'Welcome '..new_member..' ['..user_id..'].\n'
+                         ..'You are in group '..msg.to.title..'.\n'
         if welcome_stat == 'group' then
           receiver = get_receiver(msg)
         elseif welcome_stat == 'private' then
