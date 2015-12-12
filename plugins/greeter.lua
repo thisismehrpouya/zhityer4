@@ -101,8 +101,8 @@ local function run(msg, matches)
           rules = data[tostring(msg.to.id)]['rules']
           rules = '\nRules :\n'..rules..'\n'
         end
-        local welcomes = 'Welcome '..username..new_member..' ['..user_id..'].\n'
-                         ..'You are in group '..msg.to.title..'.\n'
+        local welcomes = 'عزیز '..new_member..' خوش آمدی\n'
+                         ..'.'..msg.to.title..' به گروه\n'
         if welcome_stat == 'group' then
           receiver = get_receiver(msg)
         elseif welcome_stat == 'private' then
@@ -121,7 +121,6 @@ return {
   usage = {
     moderator = {
       '!welcome group : ارسال پیام خوش امد گویی در گروه',
-      '!welcome pm : ارسال پیام خوش آمد گویی به پی وی اعضای جدید',
       '!welcome disable : غیرفعال کردن پیام خوش آمد گویی'
     },
   },
